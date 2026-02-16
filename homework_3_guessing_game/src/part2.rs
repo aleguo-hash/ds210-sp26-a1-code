@@ -11,9 +11,9 @@ impl Strategy for Part2 {
         let middle = (min + max)/2;
         let mut x = player.ask_to_compare(middle);
         if x  == 1{
-            min = middle;
+            min = middle +1;
         }else if x == -1{
-            max = middle;
+            max = middle -1;
         }else if x == 0{
             return middle;
         }
